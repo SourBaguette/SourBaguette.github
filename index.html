@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <title>Rasdaman Wiki Page</title>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img class="logo" src="images/rasdamanlogo.png">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mainnav" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://rasdaman.org/wiki/Introduction">About
+                                    rasdaman</a></li>
+                            <li><a class="dropdown-item" href="https://rasdaman.org/wiki/Features">Feature overview</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Documentation
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="https://rasdaman.org/wiki/Documentation">Documentation</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://doc.rasdaman.org/stable/02_inst-guide.html#getting-started">Download</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://rasdaman.org/wiki/Workshops">Training
+                                    Material</a></li>
+                            <li><a class="dropdown-item" href="https://rasdaman.org/wiki/PetascopeUserGuide">Geo
+                                    Services</a></li>
+                            <li>
+                                <div class="dropdown-item"><a href="https://rasdaman.org/wiki/Clients"
+                                        style="text-decoration: none; color: black;"><b>Clients</b></a> & <a
+                                        style="text-decoration: none; color: black"
+                                        href="https://rasdaman.org/wiki/RasdamanStorageBackend"><b>Backends</b></a>
+                                </div>
+                            </li>
+                            <li><a class="dropdown-item" href="https://rasdaman.org/wiki/Standards">Standards</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Support
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://rasdaman.org/wiki/Support">Support</a></li>
+                            <li><a class="dropdown-item" href="https://rasdaman.org/wiki/FAQ">HowTos and FAQs</a></li>
+                            <li><a class="dropdown-item" href="https://rasdaman.org/wiki/MailingLists">Mailing lists</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://rasdaman.org/wiki/ReportIssue">Report an
+                                    issue</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Development
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://rasdaman.org/wiki/Development">Development</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://rasdaman.org/wiki/HowToContribute">How to
+                                    contribute</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active underline" aria-current="page"
+                            href=" https://rasdaman.org/wiki">Wiki</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Heading with Logo and Slogan -->
+    <div class="headingCover">
+        <div class="headingContainer">
+            <div class="rasdamanImage">
+                <img class="img-fluid" src="/images/rasdamanlogo.png">
+            </div>
+            <div class="rasdamanHeading">
+                <p class="textHeading">Welcome to rasdaman — the world's most flexible and scalable Datacube Engine</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainTextContainer">
+        <div class="mainTextContainerChild1">
+            <p>rasdaman ("<u>ras</u>ter <u>da</u>ta <u>man</u>ager") allows management and analytics of massive
+                multi-dimensional
+                <a href="http://en.wikipedia.org/wiki/Array" style="color: #822">arrays</a> ("<a
+                    href="http://en.wikipedia.org/wiki/Data_cube" style="color: #822">datacubes</a>")
+                such as <strong>sensor, image, simulation, and statistics data</strong> appearing in <a
+                    href="https://rasdaman.org/wiki/ApplicationDomains" style="color: #822">domains</a>
+                like Earth, Space, and Life sciences; in particular its flexibility, performance, scalability, and open
+                standards support make rasdaman stand out.
+                From simple geo imagery services up to complex analytics, rasdaman provides the whole spectrum of
+                functionality on spatio-temporal raster data -
+                on space and time, on regular and irregular grids. While using your well-known <a
+                    href="https://rasdaman.org/wiki/Clients" style="color: #822">clients</a>,
+                from Leaflet over NASA WorldWind and QGIS to R and python. Actionable datacubes from the inventors - in
+                fact, rasdaman <a href="http://en.wikipedia.org/wiki/Array_DBMS" style="color: #822">
+                    has pioneered Array Databases</a>. Much has happened since then - see the <a
+                    href="https://rasdaman.com/news.php" style="color: #822">latest news</a> for what has happened
+                recently in the
+                rasdaman and standardization universe!
+            </p>
+        </div>
+        <div class="mainTextContainerChild2">
+            <img src="/images/mundi-rasdaman.jpeg">
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <section id="team" class="pb-5">
+        <div class="container">
+            <h5 class="section-title h1">Title</h5>
+            <div class="row">
+                <!-- Card -->
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/datacube.jpeg" alt="card image"></p>
+                                        <h4 class="card-title" style="font-size: 35px">Wanna try?</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Wanna try?</h4>
+                                        <p class="card-text">It's easy! Just go to the <a
+                                                href="http://standards.rasdaman.com/">datacube
+                                                playground</a>. Or <a
+                                                href="https://doc.rasdaman.org/stable/02_inst-guide.html#getting-started">download</a>
+                                            readily configured VMs, RPMs, or - of course - the source code. For each
+                                            step, there is <a href="http://rasdaman.org/wiki/Documentation">ample
+                                                documentation</a>
+                                            available, as well as <a
+                                                href="http://rasdaman.org/wiki/Support">professional
+                                                support</a>,including dedicated <a
+                                                href="http://rasdaman.org/wiki/MailingLists">mailing
+                                                lists</a>
+                                            gathering more than 300 members as of 2019. And then, we so much appreciate
+                                            that you cite
+                                            rasdaman with its DOI <a
+                                                href="​https://doi.org/10.5281/zenodo.1040170">https://doi.org/10.5281/zenodo.1040170</a>
+                                            !
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Card -->
+                <!-- Card -->
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/award.jpeg" alt="card image"></p>
+                                        <h4 class="card-title" style="font-size: 35px">Worldwide Recognition</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Worldwide Recognition</h4>
+                                        <p class="card-text">
+                                            Independent experts unanimously
+                                            attested that, based on "proven evidence", rasdaman "significantly
+                                            transforms the way scientists access and use data in a way that hitherto was
+                                            not possible".
+                                            A sustained <a class="ext-link"
+                                                href="http://kahlua.eecs.jacobs-university.de/~lsis/#awards"><span
+                                                    class="icon"></span>series of international innovation awards</a>
+                                            recognizes rasdaman's lead in datacube analytics services. US CIO Review <a
+                                                class="ext-link"
+                                                href="http://bigdata.cioreview.com/vendor/2016/rasdaman"><span
+                                                    class="icon"></span>has picked rasdaman</a> into their <a
+                                                class="ext-link"
+                                                href="http://bigdata.cioreview.com/vendors/most-promising-bigdata-solution-providers-2016.html"><span
+                                                    class="icon"></span>Most Promising Big Data Technologies</a>.
+                                            rasdaman is official OGC WCS Reference Implementation and <a
+                                                class="ext-link"
+                                                href="http://geossregistries.info/geosspub/resource_details_ns.jsp?compId=urn:geoss:csr:resource:urn:uuid:e8d4eb7b-4681-4f71-9e34-0f78cf10ce92"><span
+                                                    class="icon"></span>listed in the GEOSS Component and Service
+                                                Registry</a>.
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <!-- Card -->
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/OSGeo.jpeg" alt="card image"></p>
+                                        <h4 class="card-title" style="font-size: 35px">Open-Source</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Open-Source</h4>
+                                        <p class="card-text">
+                                            The rasdaman team proudly contributes to the open-source community -
+                                            rasdaman is <a class="ext-link"
+                                                href="https://www.osgeo.org/projects/rasdaman/"><span
+                                                    class="icon"></span>OSGeo community project</a> and part of the <a
+                                                class="wiki" href="/wiki/OSGeoLiveGetStarted">OSGeo Live DVD</a> of
+                                            particularly recommended open-source geo tools.
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Card -->
+                <!-- Card -->
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="images/bigDataCube.jpeg" alt="card image"></p>
+                                        <h4 class="card-title" style="font-size: 35px">Makers of Big Data Standards</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Makers of Big Data Standards</h4>
+                                        <p class="card-text">
+                                            Based on its unparalleled experience the rasdaman team is <a class="wiki"
+                                                href="/wiki/Standards">leading Big Datacube standardization</a> in OGC
+                                            and ISO shaping and driving the coverage and SQL datacube standards, often
+                                            chairing the groups. The rasdaman array query language forms the blueprint
+                                            for the <a class="ext-link"
+                                                href="https://www.iso.org/standard/67382.html"><span
+                                                    class="icon"></span>ISO Array SQL</a> and <a class="ext-link"
+                                                href="http://en.wikipedia.org/wiki/Web_Coverage_Processing_Service"><span
+                                                    class="icon"></span>OGC WCPS</a> datacube analytics standards.
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Card -->
+            </div>
+        </div>
+    </section>
+    <!-- Team -->
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+
+</html>
