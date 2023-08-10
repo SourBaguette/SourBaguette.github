@@ -3,28 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <title>Rasdaman Wiki Page</title>
 </head>
 
 <body>
-    <!-- Nav Bar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="images/rasdamanlogo.png" class="navbar-brand navbar-logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                    <!-- About Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -37,6 +37,8 @@
                             </li>
                         </ul>
                     </li>
+
+                    <!-- Documentation Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -62,6 +64,8 @@
                             <li><a class="dropdown-item" href="https://rasdaman.org/wiki/Standards">Standards</a></li>
                         </ul>
                     </li>
+
+                    <!-- Support Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -76,6 +80,8 @@
                                     issue</a></li>
                         </ul>
                     </li>
+
+                    <!-- Development Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -88,30 +94,32 @@
                                     contribute</a></li>
                         </ul>
                     </li>
+
+                    <!-- Wiki Navbar item -->
                     <li class="nav-item">
                         <a class="nav-link active bg-body-tertiary" aria-current="page"
                             href=" https://rasdaman.org/wiki">Wiki</a>
                     </li>
                 </ul>
-    
             </div>
         </div>
     </nav>
-    <!-- Heading with Logo and Slogan -->
-    <div class="headingCover">
-        <div class="headingContainer">
-            <div class="rasdamanImage">
-                <img class="img-fluid" src="/images/rasdamanlogo.png">
-            </div>
-            <div class="rasdamanHeading">
-                <p class="textHeading">The world's most flexible and scalable Datacube Engine</p>
-            </div>
+
+    <!-- Rasdaman Logo and Slogan -->
+    <div class="headingSlogan">
+        <div class="banner-div">
+            <img class="img-banner" src="images/rasdamanlogo.png">
+        </div>
+        <div class="slogan-div">
+            <h1 class="img-slogan">The world's most flexible and scalable Datacube Engine</h1>
         </div>
     </div>
 
-    <div class="mainTextContainer">
-        <div class="mainTextContainerChild1">
-            <p>rasdaman ("<u>ras</u>ter <u>da</u>ta <u>man</u>ager") allows management and analytics of massive
+    <!-- Rasdaman info and picture of Earth -->
+    <div class="wrapper">
+        <div class="img-info">
+            <p class="rasdaman-info">rasdaman ("<u>ras</u>ter <u>da</u>ta <u>man</u>ager") allows management and
+                analytics of massive
                 multi-dimensional
                 <a href="http://en.wikipedia.org/wiki/Array" style="color: #822;">arrays</a> ("<a
                     href="http://en.wikipedia.org/wiki/Data_cube" style="color: #822">datacubes</a>")
@@ -130,9 +138,7 @@
                 recently in the
                 rasdaman and standardization universe!
             </p>
-        </div>
-        <div class="mainTextContainerChild2">
-            <img src="/images/mundi-rasdaman.jpeg">
+            <img class="img-mundi" src="images/mundi-rasdaman.jpeg">
         </div>
     </div>
 
@@ -142,7 +148,7 @@
             <h5 class="section-title h1">Title</h5>
             <div class="row">
                 <!-- Card -->
-                <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
                             <div class="frontside">
@@ -157,20 +163,20 @@
                                 <div class="card">
                                     <div class="card-body text-center mt-4">
                                         <h4 class="card-title">Wanna try?</h4>
-                                        <p class="card-text">It's easy! Just go to the <a
-                                                href="http://standards.rasdaman.com/" style="font-size: 1.2vw">datacube
-                                                playground</a>. Or <a style="font-size: 1.2vw"
+                                        <p class="card-text">It's easy! Just go to the <a class="card-link"
+                                                href="http://standards.rasdaman.com/">datacube
+                                                playground</a>. Or<a class="card-link"
                                                 href="https://doc.rasdaman.org/stable/02_inst-guide.html#getting-started">download</a>
                                             Debian packages, or - of course - the source code. For each
-                                            step, there is <a style="font-size: 1.2vw"
+                                            step, there is <a class="card-link"
                                                 href="http://rasdaman.org/wiki/Documentation">ample
                                                 documentation</a>
-                                            available, as well as <a style="font-size: 1.2vw"
+                                            available, as well as <a class="card-link"
                                                 href="http://rasdaman.org/wiki/Support">professional
-                                                support</a>,including dedicated <a style="font-size: 1.2vw"
+                                                support</a>,including dedicated <a class="card-link"
                                                 href="http://rasdaman.org/wiki/MailingLists">mailing
-                                                lists</a>. To cite rasdaman please use<a style="font-size: 1.2vw"
-                                                href="​https://doi.org/10.5281/zenodo.1040170">https://doi.org/10.5281/zenodo.1040170</a>
+                                                lists</a>. To cite rasdaman please use<a class="card-link"
+                                                href="https://doi.org/10.5281/zenodo.1040170">https://doi.org/10.5281/zenodo.1040170</a>
                                             !
                                         </p>
                                         <ul class="list-inline">
@@ -203,7 +209,7 @@
                 </div>
                 <!-- /Card -->
                 <!-- Card -->
-                <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
                             <div class="frontside">
@@ -221,18 +227,21 @@
                                         <p class="card-text">
                                             Independent experts unanimously
                                             attested that rasdaman "significantly
-                                            transforms the way scientists access and use data in a way that hitherto was
+                                            transforms the way scientists access and use data in a way that hitherto
+                                            was
                                             not possible".
-                                            A <a class="ext-link" style="font-size: 1.2vw"
+                                            A <a class="ext-link card-link"
                                                 href="http://kahlua.eecs.jacobs-university.de/~lsis/#awards"><span
-                                                    class="icon"></span>series of international innovation awards</a>
-                                            recognizes rasdaman's lead in datacube analytics services. US CIO Review <a
-                                                class="ext-link" style="font-size: 1.2vw"
+                                                    class="icon"></span>series of international innovation
+                                                awards</a>
+                                            recognizes rasdaman's lead in datacube analytics services. US CIO Review
+                                            <a class="ext-link card-link"
                                                 href="http://bigdata.cioreview.com/vendor/2016/rasdaman"><span
                                                     class="icon"></span>has picked rasdaman</a> into their <a
-                                                class="ext-link" style="font-size: 1.2vw"
+                                                class="ext-link card-link"
                                                 href="http://bigdata.cioreview.com/vendors/most-promising-bigdata-solution-providers-2016.html"><span
-                                                    class="icon"></span>Most Promising Big Data Technologies</a>, etc.
+                                                    class="icon"></span>Most Promising Big Data Technologies</a>,
+                                            etc.
                                         </p>
                                         <ul class="list-inline">
                                             <li class="list-inline-item">
@@ -264,7 +273,7 @@
                 </div>
                 <!-- Card -->
                 <!-- Card -->
-                <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
                             <div class="frontside">
@@ -281,11 +290,11 @@
                                         <h4 class="card-title">Open-Source</h4>
                                         <p class="card-text">
                                             The rasdaman team proudly contributes to the open-source community -
-                                            rasdaman is <a class="ext-link" style="font-size: 1.2vw"
+                                            rasdaman is <a class="ext-link card-link"
                                                 href="https://www.osgeo.org/projects/rasdaman/"><span
-                                                    class="icon"></span>OSGeo community project</a> and part of the <a
-                                                class="wiki" style="font-size: 1.2vw"
-                                                href="/wiki/OSGeoLiveGetStarted">OSGeo Live DVD</a> of
+                                                    class="icon"></span>OSGeo community project</a> and part of the
+                                            <a class="wiki card-link" href="/wiki/OSGeoLiveGetStarted">OSGeo Live
+                                                DVD</a> of
                                             particularly recommended open-source geo tools.
                                         </p>
                                         <ul class="list-inline">
@@ -318,13 +327,14 @@
                 </div>
                 <!-- /Card -->
                 <!-- Card -->
-                <div class="col-xs-12 col-sm-12 col-md-6">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                         <div class="mainflip">
                             <div class="frontside">
                                 <div class="card">
                                     <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="images/bigDataCube.jpeg" alt="card image"></p>
+                                        <p><img class=" img-fluid" src="images/bigDataCube.jpeg" alt="card image">
+                                        </p>
                                         <h4 class="card-title" style="font-size: 2.5em">Makers of Big Data Standards
                                         </h4>
                                     </div>
@@ -335,15 +345,17 @@
                                     <div class="card-body text-center mt-4">
                                         <h4 class="card-title">Makers of Big Data Standards</h4>
                                         <p class="card-text">
-                                            Based on its unparalleled experience the rasdaman team is <a class="wiki"
-                                                style="font-size: 1.2vw" href="/wiki/Standards">leading Big Datacube
+                                            Based on its unparalleled experience the rasdaman team is <a
+                                                class="wiki card-link" href="/wiki/Standards">leading Big Datacube
                                                 standardization</a> in OGC
-                                            and ISO shaping and driving the coverage and SQL datacube standards, often
-                                            chairing the groups. The rasdaman array query language forms the blueprint
-                                            for the <a class="ext-link" style="font-size: 1.2vw"
+                                            and ISO shaping and driving the coverage and SQL datacube standards,
+                                            often
+                                            chairing the groups. The rasdaman array query language forms the
+                                            blueprint
+                                            for the <a class="ext-link card-link"
                                                 href="https://www.iso.org/standard/67382.html"><span
-                                                    class="icon"></span>ISO Array SQL</a> and <a class="ext-link"
-                                                style="font-size: 1.2vw"
+                                                    class="icon"></span>ISO Array SQL</a> and <a
+                                                class="ext-link card-link"
                                                 href="http://en.wikipedia.org/wiki/Web_Coverage_Processing_Service"><span
                                                     class="icon"></span>OGC WCPS</a> datacube analytics standards.
                                         </p>
@@ -381,29 +393,34 @@
     </section>
     <!-- Team -->
 
-    <table border="0" align="center" cellpadding="5" cellspacing="0">
-        <tbody>
-            <tr>
-                <td align="center">
-                    <fieldset class="rasdamanChart">
-                        <legend><b>rasdaman daily downloads</b></legend>
-                        <iframe src="https://doc.rasdaman.org/CountDownload/"
-                            style="border:none; width:580px; height:220px;" scrolling="no"></iframe>
-                    </fieldset>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="table-footer">
+        <!-- Rasdaman daily download table -->
+        <table class="rasdaman-counter" style="text-align: center; border: 0px" cellpadding="5" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td style="text-align: center">
+                        <fieldset class="rasdamanChart">
+                            <legend><b>rasdaman daily downloads</b></legend>
+                            <iframe src="https://doc.rasdaman.org/CountDownload/"
+                                style="border:none; width:580px; height:220px;" scrolling="no"></iframe>
+                        </fieldset>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-    <!-- Footer -->
-    <div class="footer" class="bg-body-">
-        <text>© 2023 . All rights reserved.</text>
+        <!-- Footer -->
+        <div class="footer">
+            <text>© 2023 . All rights reserved.</text>
+        </div>
     </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+
+    <!-- Linking JS file -->
     <script src="index.js" charset="UTF-8"></script>
 </body>
 
