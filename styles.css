@@ -65,6 +65,10 @@
     background-color: white;
 }
 
+.rasdaman-visitors{
+    padding-left: 30px;
+}
+
 /* FontAwesome for working BootSnippet :> */
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -253,6 +257,11 @@ section .section-title {
     .img-mundi{
         padding-top: 30px;
     }
+
+    .rasdaman-visitors{
+        padding-left: 20px;
+    }
+
 }
 @media only screen and (min-width: 1000px){
     .wrapper{
@@ -307,4 +316,9 @@ section .section-title {
     .navbar-brand{
         display: none;
     }
+
+    .rasdaman-visitors{
+        padding-left: 0px;
+    }
+
 }
