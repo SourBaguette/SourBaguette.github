@@ -37,7 +37,7 @@
 .rasdaman-info{
     padding: 0px 30px 20px;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     color: #111;
     line-height: 24px;
     text-align: justify;
@@ -68,6 +68,12 @@
 
 .rasdaman-visitors{
     padding-left: 30px;
+}
+
+.maxwidth{
+    max-width: 1520px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* FontAwesome for working BootSnippet :> */
@@ -320,6 +326,10 @@ section .section-title {
 
     .rasdaman-visitors{
         padding-left: 0px;
+    }
+
+    .img-slogan{
+        font-size: 48px;
     }
 
 }
