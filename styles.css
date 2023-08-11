@@ -65,7 +65,6 @@
     background-color: white;
 }
 
-
 /* FontAwesome for working BootSnippet :> */
 
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -101,6 +100,7 @@ section .section-title {
 #team .card {
     border: none;
     background: #ffffff;
+    --bs-card-spacer-x: 0rem;
 }
 
 .image-flip:hover .backside,
@@ -181,7 +181,6 @@ section .section-title {
 }
 
 .backside .card a {
-    font-size: 18px;
     color: #B31312 !important;
 }
 
@@ -196,8 +195,10 @@ section .section-title {
     border-radius: 50%;
 }
 
-a_card-text{
-    text-align: center;
+.card-text{
+    text-align:justify;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @media only screen and (min-width: 768px){
@@ -253,7 +254,6 @@ a_card-text{
         padding-top: 30px;
     }
 }
-
 @media only screen and (min-width: 1000px){
     .wrapper{
         width: 100%;
@@ -298,5 +298,13 @@ a_card-text{
     /* dropdown on hover option */
     .dropdown:hover .dropdown-menu{
         display: block;
+    }
+
+    .navbar-padding{
+        margin-right: 40px;
+    }
+
+    .navbar-brand{
+        display: none;
     }
 }
