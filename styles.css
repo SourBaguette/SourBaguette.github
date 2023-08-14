@@ -15,14 +15,17 @@
     text-align: center;
 }
 
-.headingSlogan{
+.banner-div{
     display: none;
 }
 
 /* Centering the Rasdaman Slogan */
 .img-slogan{
-    font-size: 25px;
+    font-size:32px;
     color: #B31312;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
 } 
 
 .slogan-div{
@@ -222,6 +225,11 @@ section .section-title {
         display: none;
     }
 
+    .banner-div{
+        display: inline;
+    }
+
+
     .headingSlogan{
         display: flex;
         padding-bottom: 80px;
@@ -237,6 +245,9 @@ section .section-title {
     .img-slogan{
         font-size: 3vw;
         text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
     }
 
     .banner-div{
