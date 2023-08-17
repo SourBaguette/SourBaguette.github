@@ -35,6 +35,7 @@
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 } 
 
 .slogan-div{
@@ -50,7 +51,7 @@
 
 .rasdaman-info{
     padding: 0px 30px 20px;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     color: #111;
     line-height: 24px;
@@ -225,6 +226,7 @@ section .section-title {
 .frontside .card .card-title,
 .backside .card .card-title {
     color: #B31312 !important;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .text-card-align{
