@@ -1,0 +1,348 @@
+.wrapper{
+    width: 100%;
+    background-color: #eee;
+    padding-top: 30px;
+}
+
+/* Centering the Rasdaman Banner */
+.img-banner{
+    width: 40%;
+    height: auto;
+}
+
+.banner-div{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.banner-div{
+    display: none;
+}
+
+/* Centering the Rasdaman Slogan */
+.img-slogan{
+    font-size:32px;
+    color: #B31312;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+} 
+
+.slogan-div{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.img-info{
+    width: 100%;
+}
+
+.rasdaman-info{
+    padding: 0px 30px 20px;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #111;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.img-mundi{
+    width: 100%;
+    height: auto;
+}
+
+.navbar-logo{
+    height: 40px;
+}
+
+.rasdaman-counter{
+    width: 100%;
+}
+
+.footer{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.table-footer{
+    background-color: white;
+}
+
+.rasdaman-visitors{
+    padding-left: 30px;
+}
+
+.maxwidth{
+    max-width: 1520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* FontAwesome for working BootSnippet :> */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+    background: #eee !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #B31312;
+    border-color: #B31312;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #B31312;
+    border-color: #B31312;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #B31312;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+    --bs-card-spacer-x: 0rem;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    color: #B31312 !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #B31312 !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.card-text{
+    text-align:justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media only screen and (min-width: 768px){
+
+    .wrapper{
+        padding-top: 0px;
+    }
+
+    .navbar-logo{
+        display: none;
+    }
+
+    .banner-div{
+        display: inline;
+    }
+
+
+    .headingSlogan{
+        display: flex;
+        padding-bottom: 80px;
+        padding-top: 80px;
+        width: 95%;
+    }
+
+    .img-banner{
+        width: 50%;
+        height: auto;
+    }
+
+    .img-slogan{
+        font-size: 3vw;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+
+    .banner-div{
+        width: 50%;
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .slogan-div{
+        width: 50%;
+        text-align: left;
+        padding-bottom: 0px;
+        padding-right: 100px;
+    }
+
+    .wrapper{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .rasdaman-info{
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .img-mundi{
+        padding-top: 30px;
+    }
+
+    .rasdaman-visitors{
+        padding-left: 20px;
+    }
+
+}
+@media only screen and (min-width: 1000px){
+    .wrapper{
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .slogan-div{
+        padding-top:40px;
+        padding-bottom: 40px;
+    }
+
+    .banner-div{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .img-info{
+        display: flex;
+        padding-bottom: 50px;
+        padding-top: 0px;
+        align-items: center;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+        
+    .img-mundi{
+        padding-left: 30px;
+    }
+
+    .rasdaman-info{
+        font-size: 18px;
+        line-height: 26px;
+        padding-top: 50px;
+    }
+
+    .headingSlogan{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    /* dropdown on hover option */
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+
+    .navbar-padding{
+        margin-right: 40px;
+    }
+
+    .navbar-brand{
+        display: none;
+    }
+
+    .rasdaman-visitors{
+        padding-left: 0px;
+    }
+
+    .img-slogan{
+        font-size: 48px;
+    }
+
+}

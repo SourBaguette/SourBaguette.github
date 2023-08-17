@@ -19,18 +19,29 @@
     display: none;
 }
 
+.raster-logo{
+    height: 100px;
+}
+
+.hero-div{
+    text-align: center;
+    padding-top: 20px;
+}
+
 /* Centering the Rasdaman Slogan */
 .img-slogan{
     font-size:32px;
     color: #B31312;
     padding-right: 20px;
     padding-left: 20px;
-    padding-top: 30px;
+    padding-top: 10px;
 } 
 
 .slogan-div{
     text-align: center;
     padding-bottom: 30px;
+    background-image: url(img/bg.png);
+    background-size: contain;
 }
 
 .img-info{
@@ -79,11 +90,20 @@
     margin-right: auto;
 }
 
-/* FontAwesome for working BootSnippet :> */
+.button-row-container{
+    padding-top: 25px;
+    text-align: center;
+    gap: 10%;
+}
 
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* CSS for cards */
+ 
 #team {
     background: #eee !important;
+}
+
+.text-card-align{
+    align-items: center;;
 }
 
 .btn-primary:hover,
@@ -194,6 +214,10 @@ section .section-title {
     min-height: 312px;
 }
 
+.frontside .card{
+    padding-top: 35px;
+}
+
 .backside .card a {
     color: #B31312 !important;
 }
@@ -201,6 +225,12 @@ section .section-title {
 .frontside .card .card-title,
 .backside .card .card-title {
     color: #B31312 !important;
+}
+
+.text-card-align{
+    position: relative;
+    top: 50%;
+    transform: translateY(+10%);
 }
 
 .frontside .card .card-body img {
@@ -218,7 +248,7 @@ section .section-title {
 @media only screen and (min-width: 768px){
 
     .wrapper{
-        padding-top: 0px;
+        padding-top: 30px;
     }
 
     .navbar-logo{
@@ -232,9 +262,7 @@ section .section-title {
 
     .headingSlogan{
         display: flex;
-        padding-bottom: 80px;
-        padding-top: 80px;
-        width: 95%;
+        width: 100%;
     }
 
     .img-banner{
@@ -247,7 +275,11 @@ section .section-title {
         text-align: center;
         padding-left: 0px;
         padding-right: 0px;
-        padding-top: 0px;
+        padding-top: 50px;
+    }
+
+    .download-button{
+        padding-bottom: 80px;
     }
 
     .banner-div{
@@ -257,10 +289,9 @@ section .section-title {
     }
 
     .slogan-div{
-        width: 50%;
+        width: 100%;
         text-align: left;
         padding-bottom: 0px;
-        padding-right: 100px;
     }
 
     .wrapper{
@@ -288,6 +319,7 @@ section .section-title {
         width: 100%;
         padding-left: 0px;
         padding-right: 0px;
+        padding-top: 50px;
     }
 
     .slogan-div{
@@ -320,8 +352,8 @@ section .section-title {
     }
 
     .headingSlogan{
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
     
     /* dropdown on hover option */

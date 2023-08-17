@@ -3,14 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css">
-
+    <link href="css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>rasdaman</title>
 </head>
 
@@ -91,14 +89,6 @@
                         <a class="nav-link active bg-body-tertiary" aria-current="page"
                             href=" https://rasdaman.org/wiki">Wiki</a>
                     </li>
-                    <!-- Rasdaman visitors -->
-                    <li class="nav-item navbar-padding">
-                    <div>
-                        <script class="revolver-map" type="text/javascript"
-                            src="https://rf.revolvermaps.com/0/0/4.js?i=a1850emr3y9&amp;m=6&amp;h=80&amp;c=ff0000&amp;r=0"
-                            async="async"></script>
-                    </div>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -107,19 +97,11 @@
     <!-- Rasdaman Slogan -->
     <div class="headingSlogan maxwidth">
         <div class="slogan-div">
-            <div class="hero-div">
-                <img class="raster-logo" src="img/rasdaman-logo_no-colorbar.png"/>
-            </div>
-            <div class="button-row-container">
-                <button type="button" class="btn btn-light">Light</button>
-                <button type="button" class="btn btn-light">Light</button>
-                <button type="button" class="btn btn-light">Light</button>
-            </div>
-            <h1 class="img-slogan">Multi-Dimensional Datacube Management and Analytics <br/>- easy, flexible, scalable, standards-based</h1>
+            <h1 class="img-slogan">The world's most flexible and scalable Datacube Engine</h1>
             <br>
-            <div class="text-center download-button">
+            <div class="text-center">
                 <a href=" https://doc.rasdaman.org/02_inst-guide.html#official-packages">
-                    <button type="button" class="btn btn-light">Download</button>
+                    <button type="button" class="btn btn-light">Download v10.2.8</button>
                 </a>
             </div>
         </div>
@@ -128,27 +110,33 @@
     <!-- Rasdaman info and picture of Earth -->
     <div class="wrapper">
         <div class="img-info maxwidth">
-            <p class="rasdaman-info">
-                rasdaman ("<u>ras</u>ter <u>da</u>ta <u>man</u>ager") allows management and
-                analytics of massive multi-dimensional
+            <p class="rasdaman-info">rasdaman ("<u>ras</u>ter <u>da</u>ta <u>man</u>ager") allows management and
+                analytics of massive
+                multi-dimensional
                 <a href="http://en.wikipedia.org/wiki/Array" style="color: #822;">arrays</a> ("<a
                     href="http://en.wikipedia.org/wiki/Data_cube" style="color: #822">datacubes</a>")
-                such as <strong>sensor, image, simulation, and statistics data</strong> appearing in
-                <a href="https://rasdaman.org/wiki/ApplicationDomains" style="color: #822">domains</a>
+                such as <strong>sensor, image, simulation, and statistics data</strong> appearing in <a
+                    href="https://rasdaman.org/wiki/ApplicationDomains" style="color: #822">domains</a>
                 like Earth, Space, and Life sciences; in particular its flexibility, performance, scalability, and open
                 standards support make rasdaman stand out.
                 From simple geo imagery services up to complex analytics, rasdaman provides the whole spectrum of
                 functionality on spatio-temporal raster data -
-                on space and time, on regular and irregular grids. While using your well-known
-                <a href="https://rasdaman.org/wiki/Clients" style="color: #822">clients</a>,
-                from Leaflet over NASA WorldWind and QGIS to R and python and openEO.
-                Actionable datacubes from the inventors - in fact, rasdaman
-                <a href="http://en.wikipedia.org/wiki/Array_DBMS" style="color: #822"> has pioneered Array Databases</a>.
-                Much has happened since then - see the
-                <a href="https://rasdaman.com/news.php" style="color: #822">latest news</a> for what has happened
+                on space and time, on regular and irregular grids. While using your well-known <a
+                    href="https://rasdaman.org/wiki/Clients" style="color: #822">clients</a>,
+                from Leaflet over NASA WorldWind and QGIS to R and python. Actionable datacubes from the inventors - in
+                fact, rasdaman <a href="http://en.wikipedia.org/wiki/Array_DBMS" style="color: #822">
+                    has pioneered Array Databases</a>. Much has happened since then - see the <a
+                    href="https://rasdaman.com/news.php" style="color: #822">latest news</a> for what has happened
                 recently in the
                 rasdaman and standardization universe!
             </p>
+            <!-- Rasdaman visitors -->
+            <div class="rasdaman-visitors">
+                <script class="revolver-map" type="text/javascript"
+                    src="https://rf.revolvermaps.com/0/0/4.js?i=a1850emr3y9&amp;m=6&amp;h=80&amp;c=ff0000&amp;r=0"
+                    async="async"></script>
+                <p>Rasdaman Visitors</p>
+            </div>
         </div>
     </div>
 
@@ -171,7 +159,7 @@
                             </div>
                             <div class="backside">
                                 <div class="card">
-                                    <div class="card-body text-center mt-4 text-card-align">
+                                    <div class="card-body text-center mt-4">
                                         <h4 class="card-title">Wanna try?</h4>
                                         <p class="card-text">It's easy! Just go to the <a class="card-link"
                                                 href="http://standards.rasdaman.com/">datacube playground</a>.
@@ -188,6 +176,28 @@
                                                 href="https://doi.org/10.5281/zenodo.1040170">https://doi.org/10.5281/zenodo.1040170</a>
                                             !
                                         </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -209,7 +219,7 @@
                             </div>
                             <div class="backside">
                                 <div class="card">
-                                    <div class="card-body text-center mt-4 text-card-align">
+                                    <div class="card-body text-center mt-4">
                                         <h4 class="card-title">Worldwide Recognition</h4>
                                         <p class="card-text">
                                             Independent experts unanimously
@@ -230,6 +240,28 @@
                                                     class="icon"></span>Most Promising Big Data Technologies</a>,
                                             etc.
                                         </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -244,14 +276,14 @@
                             <div class="frontside">
                                 <div class="card">
                                     <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="img/OSGeo.jpeg" alt="card image"></p>
+                                        <p><img class=" img-fluid" src="images/OSGeo.jpeg" alt="card image"></p>
                                         <h4 class="card-title" style="font-size: 2.5em">Open-Source</h4>
                                     </div>
                                 </div>
                             </div>
                             <div class="backside">
                                 <div class="card">
-                                    <div class="card-body text-center mt-4 text-card-align">
+                                    <div class="card-body text-center mt-4">
                                         <h4 class="card-title">Open-Source</h4>
                                         <p class="card-text">
                                             The rasdaman team proudly contributes to the open-source community -
@@ -262,6 +294,28 @@
                                                 DVD</a> of
                                             particularly recommended open-source geo tools.
                                         </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -276,7 +330,7 @@
                             <div class="frontside">
                                 <div class="card">
                                     <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="img/bigDataCube.jpeg" alt="card image">
+                                        <p><img class=" img-fluid" src="images/bigDataCube.jpeg" alt="card image">
                                         </p>
                                         <h4 class="card-title" style="font-size: 2.5em">Makers of Big Data Standards
                                         </h4>
@@ -285,20 +339,45 @@
                             </div>
                             <div class="backside">
                                 <div class="card">
-                                    <div class="card-body text-center mt-4 text-card-align">
+                                    <div class="card-body text-center mt-4">
                                         <h4 class="card-title">Makers of Big Data Standards</h4>
                                         <p class="card-text">
                                             Based on its unparalleled experience the rasdaman team is <a
                                                 class="wiki card-link" href="/wiki/Standards">leading Big Datacube
                                                 standardization</a> in OGC
                                             and ISO shaping and driving the coverage and SQL datacube standards,
-                                            often chairing the groups. The rasdaman array query language forms the
-                                            blueprint for the
-                                            <a class="ext-link card-link" href="https://www.iso.org/standard/67382.html">
-                                                <span class="icon"></span>ISO Array SQL</a> and
-                                            <a class="ext-link card-link" href="http://en.wikipedia.org/wiki/Web_Coverage_Processing_Service"><span
+                                            often
+                                            chairing the groups. The rasdaman array query language forms the
+                                            blueprint
+                                            for the <a class="ext-link card-link"
+                                                href="https://www.iso.org/standard/67382.html"><span
+                                                    class="icon"></span>ISO Array SQL</a> and <a
+                                                class="ext-link card-link"
+                                                href="http://en.wikipedia.org/wiki/Web_Coverage_Processing_Service"><span
                                                     class="icon"></span>OGC WCPS</a> datacube analytics standards.
                                         </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -311,8 +390,8 @@
     </section>
     <!-- Team -->
 
-    <!-- Rasdaman daily download table -->
-    <div class="wrapper">
+    <div class="table-footer maxwidth">
+        <!-- Rasdaman daily download table -->
         <table class="rasdaman-counter" style="text-align: center; border: 0px" cellpadding="5" cellspacing="0">
             <tbody>
                 <tr>
@@ -326,17 +405,21 @@
                 </tr>
             </tbody>
         </table>
-    </div>
 
-    <div class="table-footer maxwidth">
         <!-- Footer -->
         <div class="footer">
-            <text>© 2023 rasdaman GmbH &amp; Constructor University. All rights reserved.</text>
+            <text>© 2023 . All rights reserved.</text>
         </div>
     </div>
 
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
     <!-- Linking JS file -->
-    <script src="js/index.js" charset="UTF-8"></script>
+    <script src="index.js" charset="UTF-8"></script>
 </body>
 
 </html>
