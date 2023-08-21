@@ -1,7 +1,6 @@
 .wrapper{
     width: 100%;
     background-color: #eee;
-    padding-top: 30px;
 }
 
 /* Centering the Rasdaman Banner */
@@ -30,8 +29,8 @@
 
 /* Centering the Rasdaman Slogan */
 .img-slogan{
-    font-size:32px;
-    color: #B31312;
+    font-size:large;
+    color: black;
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 10px;
@@ -41,8 +40,9 @@
 .slogan-div{
     text-align: center;
     padding-bottom: 30px;
-    background-image: url(img/bg.png);
-    background-size: contain;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    width: 100%;
 }
 
 .img-info{
@@ -95,6 +95,19 @@
     text-align: center;
     gap: 10%;
 }
+
+.text-row-container{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(248, 249, 250);
+    padding-top: 30px;
+}
+
+.text-row-container h1{
+    text-align: center;
+}
+
 
 /* CSS for cards */
  
@@ -248,10 +261,6 @@ section .section-title {
 
 @media only screen and (min-width: 768px){
 
-    .wrapper{
-        padding-top: 30px;
-    }
-
     .navbar-logo{
         display: none;
     }
@@ -320,7 +329,6 @@ section .section-title {
         width: 100%;
         padding-left: 0px;
         padding-right: 0px;
-        padding-top: 50px;
     }
 
     .slogan-div{
@@ -378,4 +386,14 @@ section .section-title {
         font-size: 48px;
     }
 
+    .text-row-container{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 50px;
+    }
+
+    .item1, .item2, .item3{
+        width: 300px;
+    }
 }
